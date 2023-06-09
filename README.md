@@ -31,28 +31,30 @@ npm start
 
 Esto abrirá tu aplicación de React en el navegador y se recargará automáticamente cada vez que realices cambios en el código.
 
+
 ### Backend (Django)
 
 Para ejecutar un proyecto en Django, sigue estos pasos:
 
-Asegúrate de tener Python y Django instalados en tu sistema. Puedes descargar Python desde https://www.python.org/ y luego instalar Django utilizando el siguiente comando en tu terminal:
+1. Asegúrate de tener Python y Django instalados en tu sistema. Puedes descargar Python desde https://www.python.org/ y luego instalar Django utilizando el siguiente comando en tu terminal:
 
 Copy code
 pip install django
-Navega hasta la carpeta raíz de tu proyecto Django en la terminal.
+2. Navega hasta la carpeta raíz de tu proyecto Django en la terminal.
 
-Ejecuta el siguiente comando para aplicar las migraciones y crear la estructura de la base de datos:
+3. Ejecuta el siguiente comando para aplicar las migraciones y crear la estructura de la base de datos:
 
 Copy code
 python manage.py migrate
-Opcionalmente, puedes crear un superusuario con el siguiente comando y seguir las instrucciones:
+4. Opcionalmente, puedes crear un superusuario con el siguiente comando y seguir las instrucciones:
 
-Copy code
+ Copy code
 python manage.py createsuperuser
-Ahora, puedes iniciar el servidor de desarrollo de Django con el siguiente comando:
 
-Copy code
+5. Ahora, puedes iniciar el servidor de desarrollo de Django con el siguiente comando:
+
 python manage.py runserver 8081
+
 Esto iniciará el servidor en http://localhost:8081/, donde podrás acceder a tu proyecto Django.
 
 Recuerda que estos pasos asumen que tienes una estructura de proyecto Django existente. Si estás comenzando un nuevo proyecto, puedes crearlo utilizando el comando django-admin startproject nombre-del-proyecto. Asegúrate de navegar a la carpeta raíz del proyecto antes de ejecutar los comandos mencionados anteriormente.
