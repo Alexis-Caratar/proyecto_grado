@@ -20,66 +20,42 @@ Este es un proyecto de ejemplo que utiliza React en el frontend y Django en el b
 ### Frontend (React)
 
 1. Asegúrate de tener Node.js instalado en tu sistema. Puedes descargarlo desde [https://nodejs.org/](https://nodejs.org/).
-2. Abre una terminal y navega hasta la carpeta donde deseas crear tu proyecto de React.
-3. Ejecuta el siguiente comando para crear un nuevo proyecto de React:
+2. Abre una terminal y navega hasta la carpeta donde deseas crear tu proyecto de React (frontend).
+3. Ejecuta el siguiente comando instalar las librerias:
 
-npx create-react-app nombre-del-proyecto
+npm i
 
-css
-Copy code
-
-Reemplaza "nombre-del-proyecto" con el nombre que desees para tu proyecto.
-4. Navega a la carpeta del proyecto:
-
-cd nombre-del-proyecto
-
-markdown
-Copy code
-
-5. Ejecuta el siguiente comando para iniciar el servidor de desarrollo de React:
+4. ejecuta el sistemas:
 
 npm start
-
-markdown
-Copy code
 
 Esto abrirá tu aplicación de React en el navegador y se recargará automáticamente cada vez que realices cambios en el código.
 
 ### Backend (Django)
 
-1. Asegúrate de tener Python y pip instalados en tu sistema. Puedes descargarlos desde [https://www.python.org/](https://www.python.org/).
-2. Abre una terminal y navega hasta la carpeta donde deseas crear tu proyecto de Django.
-3. Crea un entorno virtual para tu proyecto (opcional pero recomendado):
+Para ejecutar un proyecto en Django, sigue estos pasos:
 
-python -m venv nombre-del-entorno
+Asegúrate de tener Python y Django instalados en tu sistema. Puedes descargar Python desde https://www.python.org/ y luego instalar Django utilizando el siguiente comando en tu terminal:
 
-r
 Copy code
-
-Reemplaza "nombre-del-entorno" con el nombre que desees para tu entorno virtual.
-4. Activa el entorno virtual:
-
-- En Windows:
-
-  ```
-  nombre-del-entorno\Scripts\activate
-  ```
-
-- En macOS/Linux:
-
-  ```
-  source nombre-del-entorno/bin/activate
-  ```
-
-5. Instala Django utilizando pip:
-
 pip install django
+Navega hasta la carpeta raíz de tu proyecto Django en la terminal.
 
-markdown
+Ejecuta el siguiente comando para aplicar las migraciones y crear la estructura de la base de datos:
+
 Copy code
+python manage.py migrate
+Opcionalmente, puedes crear un superusuario con el siguiente comando y seguir las instrucciones:
 
-6. Crea un nuevo proyecto de Django:
+Copy code
+python manage.py createsuperuser
+Ahora, puedes iniciar el servidor de desarrollo de Django con el siguiente comando:
 
+Copy code
+python manage.py runserver 8081
+Esto iniciará el servidor en http://localhost:8081/, donde podrás acceder a tu proyecto Django.
+
+Recuerda que estos pasos asumen que tienes una estructura de proyecto Django existente. Si estás comenzando un nuevo proyecto, puedes crearlo utilizando el comando django-admin startproject nombre-del-proyecto. Asegúrate de navegar a la carpeta raíz del proyecto antes de ejecutar los comandos mencionados anteriormente.
 
 
 
