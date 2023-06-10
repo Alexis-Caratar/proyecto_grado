@@ -36,24 +36,33 @@ Esto abrirá tu aplicación de React en el navegador y se recargará automática
 
 Para ejecutar un proyecto en Django, sigue estos pasos:
 
-1. Asegúrate de tener Python y Django instalados en tu sistema. Puedes descargar Python desde https://www.python.org/ y luego instalar Django utilizando el siguiente comando en tu terminal:
+1. Asegúrate de tener Python 3 y Django instalados en tu sistema. Puedes descargar Python desde https://www.python.org/ y luego instalar Django utilizando el siguiente comando en tu terminal:
 
-Copy code
+
+*instalacion django <br>
 pip install django
+
+*instalacion header<br>
+pip install django-cors-headers
+
+*instalacion djframework<br>
+pip install djangorestframework
+
+
+<br>
 2. Navega hasta la carpeta raíz de tu proyecto Django en la terminal.
 
 3. Ejecuta el siguiente comando para aplicar las migraciones y crear la estructura de la base de datos:
 
-Copy code
-python manage.py migrate
+python3 manage.py migrate
+
 4. Opcionalmente, puedes crear un superusuario con el siguiente comando y seguir las instrucciones:
 
- Copy code
-python manage.py createsuperuser
+python3 manage.py createsuperuser
 
 5. Ahora, puedes iniciar el servidor de desarrollo de Django con el siguiente comando:
 
-python manage.py runserver 8081
+python3 manage.py runserver 8081
 
 Esto iniciará el servidor en http://localhost:8081/, donde podrás acceder a tu proyecto Django.
 
